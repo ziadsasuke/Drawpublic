@@ -40,7 +40,7 @@ if (message.content.startsWith(prefix + 'setavatar')) {
 }
 
 if (message.content.startsWith(prefix + 'setT')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/SasukeGaming03");
+  client.user.setGame(argresult, "https://www.twitch.tv/peery13");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 } 
@@ -59,7 +59,7 @@ client.on('ready', () => {
 });
 client.on('ready', function(){
     var ms = 100000 ;
-    var setGame = [`https://discord.gg/4jppusn `,`Draw, support`];
+    var setGame = [`_help `,`_inv`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -81,8 +81,24 @@ client.on("message", message => {
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**
          ------------------------------
-         Draw, support system devolopped
-         by Draw, devloppers
+         _bc1 : برودكاست لجميع اعضاء السيرفر بايمبد
+         _bc2 : برودكاست لجميع اعضاء السيرفر بدون ايمبد
+         _bc3 : برودكاست للاعضاء  الاونلاين فقط
+         ------------------------------
+         _id : عرض ملفك الشخصي
+         _ask : البوت يسئلك اسئلة
+         _server : احصائيات السيرفر
+         ------------------------------
+         _ban : حظر العضو من السيرفر
+         _kick : طرد العضو من السيرفر
+         _clear : مسح الشات
+         _createroles : عمل رتب متكاملة للسيرفر
+         _voicesetup : انشاء روم فويس اونلاين
+         لكتابة الكلام الذي في الروم اكتب _voicesetup الكلام و 0 
+         ------------------------------
+         _guilds : عدد سيرفر البوت
+         _inv : دعوه البوت الى سيرفر
+         _help : عرض هذه الرسالة
          ------------------------------
          
        **  `)
@@ -291,7 +307,7 @@ if (message.content.startsWith(prefix+"cv")) {
 client.on('message', message => {
   if (true) {
 if (message.content === '_inv') {
-      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=586978116841504768&permissions=0&scope=bot').catch(e => console.log(e.stack));
+      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=545312914979160085&permissions=8&scope=bot').catch(e => console.log(e.stack));
 
     }
    } 
